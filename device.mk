@@ -29,15 +29,14 @@ PRODUCT_AAPT_CONFIG := xlarge sw720dp sw600dp mdpi
 PRODUCT_AAPT_PREF_CONFIG := sw720dp
 
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    device/samsung/p7320/ramdisk/init.qcom.rc:root/init.qcom.rc \
-    device/samsung/p7320/ramdisk/init.qcom.sh:root/init.qcom.sh \
-    device/samsung/p7320/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    device/samsung/p7320/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
-    device/samsung/p7320/ramdisk/init.target.rc:root/init.target.rc \
-    device/samsung/p7320/ramdisk/ueventd.rc:root/ueventd.rc \
-    device/samsung/p7320/ramdisk/init.emmc.rc:root/init.emmc.rc \
-    device/samsung/p7320/ramdisk/fstab.qcom:root/fstab.qcom
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
+# QRNGD
+PRODUCT_PACKAGES += qrngd
 
 # BT firmware
 PRODUCT_COPY_FILES += \
