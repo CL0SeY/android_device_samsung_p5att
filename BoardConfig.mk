@@ -38,9 +38,6 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 # Assert
 TARGET_OTA_ASSERT_DEVICE := GT-P7320,p7320
 
-# Kernel toolchain
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
-
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 TARGET_KERNEL_CONFIG        := cyanogenmod_p5att_defconfig
