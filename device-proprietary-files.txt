@@ -1,7 +1,7 @@
 # Add device specific blobs here
-bin/sec_keyboard
+# bin/sec_keyboard
 
 # thermald
-bin/thermald
-etc/thermald.conf
+# bin/thermald
+# etc/thermald.conf
 
