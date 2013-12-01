@@ -31,13 +31,13 @@ PRODUCT_PACKAGES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-# Inherit from p5att device
-$(call inherit-product, device/samsung/p5att/device.mk)
+# Inherit from p7320 device
+$(call inherit-product, device/samsung/p7320/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_p5att
-PRODUCT_DEVICE := p5att
+PRODUCT_NAME := full_p7320
+PRODUCT_DEVICE := p7320
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-I957
+PRODUCT_MODEL := SAMSUNG-GT-P7320
 PRODUCT_CHARACTERISTICS := tablet,nosdcard

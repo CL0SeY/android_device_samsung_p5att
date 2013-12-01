@@ -29,16 +29,16 @@ USE_CAMERA_STUB := true
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/p5att/BoardConfigVendor.mk
+-include vendor/samsung/p7320/BoardConfigVendor.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I957,p5att
+TARGET_OTA_ASSERT_DEVICE := GT-P7320,p7320
 
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
-TARGET_KERNEL_CONFIG        := cyanogenmod_p5att_defconfig
+TARGET_KERNEL_CONFIG        := cyanogenmod_p7320_defconfig
 BOARD_KERNEL_CMDLINE        := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_KERNEL_BASE           := 0x48000000
 BOARD_KERNEL_PAGESIZE       := 2048
