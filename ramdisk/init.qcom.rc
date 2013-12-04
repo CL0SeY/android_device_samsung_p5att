@@ -121,6 +121,9 @@ on boot
     write /proc/sys/net/ipv6/conf/rmnet_sdio6/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_sdio7/accept_ra 2
 
+# symlink for light sensor
+    symlink /dev/i2c-11 /dev/i2c11
+
 # msm specific files that need to be created on /data
 on post-fs-data
 

@@ -92,3 +92,5 @@ persist.radio.snapshot_disabled=1
 # use mtp for default storage mode
 persist.sys.usb.config=mtp
 
+ro.secure=0
+

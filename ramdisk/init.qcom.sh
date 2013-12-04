@@ -98,6 +98,7 @@ netmgr=`getprop ro.use_data_netmgrd`
 case "$baseband" in
     "msm" | "csfb" | "svlte2a" | "mdm" | "unknown")
     start ril-daemon
+    sleep 1
     start qmuxd
     case "$baseband" in
         "svlte2a" | "csfb")

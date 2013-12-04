@@ -29,12 +29,12 @@ USE_CAMERA_STUB := true
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/p5att/BoardConfigVendor.mk
+-include vendor/samsung/p7320/BoardConfigVendor.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I957,p5att
+TARGET_OTA_ASSERT_DEVICE := GT-P7320,p7320
 
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
@@ -60,9 +60,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13837008896
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_HAS_SDCARD_INTERNAL := true
-# BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
-# BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk0p28
-# BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
+#BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
+#BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk0p28
+#BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true

@@ -20,36 +20,36 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/p5att/p5att-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p7320/p7320-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p5att/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p7320/overlay
 
 PRODUCT_AAPT_CONFIG := xlarge sw720dp sw600dp mdpi
 PRODUCT_AAPT_PREF_CONFIG := sw720dp
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/p5att/ramdisk/init.qcom.rc:root/init.qcom.rc \
-    device/samsung/p5att/ramdisk/init.qcom.sh:root/init.qcom.sh \
-    device/samsung/p5att/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    device/samsung/p5att/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
-    device/samsung/p5att/ramdisk/init.target.rc:root/init.target.rc \
-    device/samsung/p5att/ramdisk/ueventd.rc:root/ueventd.rc \
-    device/samsung/p5att/ramdisk/init.emmc.rc:root/init.emmc.rc \
-    device/samsung/p5att/ramdisk/fstab.qcom:root/fstab.qcom
+    device/samsung/p7320/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/p7320/ramdisk/init.qcom.sh:root/init.qcom.sh \
+    device/samsung/p7320/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/p7320/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    device/samsung/p7320/ramdisk/init.target.rc:root/init.target.rc \
+    device/samsung/p7320/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/samsung/p7320/ramdisk/init.emmc.rc:root/init.emmc.rc \
+    device/samsung/p7320/ramdisk/fstab.qcom:root/fstab.qcom
 
 # BT firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/p5att/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
+    device/samsung/p7320/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Vold
 PRODUCT_COPY_FILES += \
-    device/samsung/p5att/vold.fstab:system/etc/vold.fstab
+    device/samsung/p7320/vold.fstab:system/etc/vold.fstab
 
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
 
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/p5att/p5att-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p7320/p7320-vendor.mk)
