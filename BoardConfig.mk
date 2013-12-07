@@ -42,7 +42,7 @@ TARGET_KERNEL_CONFIG        := cyanogenmod_p5att_defconfig
 BOARD_KERNEL_CMDLINE        := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_KERNEL_BASE           := 0x48000000
 BOARD_KERNEL_PAGESIZE       := 2048
-BOARD_MKBOOTIMG_ARGS        := 0x49400000
+BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x49400000
 
 # cat /proc/emmc
 #dev:        size     erasesize name
