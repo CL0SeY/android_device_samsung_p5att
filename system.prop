@@ -57,7 +57,7 @@ ro.telephony.call_ring.multiple=0
 #
 # Simulate sdcard on /data/media
 #
-persist.fuse_sdcard=false
+persist.fuse_sdcard=true
 
 #
 # System prop for default rotation
