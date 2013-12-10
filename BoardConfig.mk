@@ -39,10 +39,10 @@ TARGET_OTA_ASSERT_DEVICE := GT-P7320,p7320
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 TARGET_KERNEL_CONFIG        := cyanogenmod_p5att_defconfig
-BOARD_KERNEL_CMDLINE        := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom zcache
 BOARD_KERNEL_BASE           := 0x48000000
 BOARD_KERNEL_PAGESIZE       := 2048
-BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x49400000
+BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x00400000
 
 # cat /proc/emmc
 #dev:        size     erasesize name
