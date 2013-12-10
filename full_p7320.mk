@@ -41,3 +41,6 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-P7320
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
+
+PRODUCT_PROPERTY_OVERRIDES += debug.composition.type=gpu
+
