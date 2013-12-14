@@ -53,3 +53,11 @@ $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/p7320/p7320-vendor.mk)
+
+ADDITIONAL_BUILD_PROPERTIES += \
+    debug.composition.type=gpu \
+    debug.egl.hw=1 \
+    debug.sf.hw=1 \
+    debug.mdpcomp.maxlayer=2 \
+    dev.pm.gpu_samplingrate=1
+
