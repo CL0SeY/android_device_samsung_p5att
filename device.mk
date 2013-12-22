@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/p7320/vold.fstab:system/etc/vold.fstab
 
+# IDC
+PRODUCT_COPY_FILES += \
+    device/samsung/p7320/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
+
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
 
